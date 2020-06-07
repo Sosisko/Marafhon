@@ -8,24 +8,29 @@
 	<link rel="stylesheet" href="./css/styles.css">
 	<link rel="stylesheet" href="./css/normalize.css">
 	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/media.css">
 </head>
 <body>
 
 <div class="background">
-			<header class="header fixed-container flex-container" >
-				<div class="header_left">
-					<ul>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
-				</div>
-				<div class="header_center"><h2>Camping.</h2></div>
-				<div class="header_right flex-container">
-					<ul>
-						<li><a href="#">Sign In</a></li>
-						<li><a href="#">Sign Up</a></li>
-					</ul>
-					<button class="search" aria-label="Поиск"></button>
+
+
+			<header class="header fixed-container" >
+				<div class="header_content flex-container">
+					<div class="header_left">
+						<ul>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div>
+					<div class="header_center"><h2>Camping.</h2></div>
+					<div class="header_right flex-container">
+						<ul>
+							<li><a href="#">Sign In</a></li>
+							<li><a href="#">Sign Up</a></li>
+						</ul>
+						<button class="search" aria-label="Поиск"></button>
+					</div>
 				</div>
 			</header>
 
@@ -34,6 +39,7 @@
 					<div class="wrapper__text_content">
 						<h1>Beatiful Places of England</h1>
 						<p>Plan your vacation on the most beatiful places of England</p>
+						
 					</div>
 				</div>
 
@@ -58,11 +64,26 @@
 					<fieldset>
 						<legend class="footer__legend">Book your vacation</legend>
 							<form action="https://jsonplaceholder.typicode.com/posts" class="form" method="POST">
-								<input type="text" name="">
-								<input type="text" name="">
-								<input type="text" name="">
-								<input type="text" name="">
-								<button type="submit"></button>
+
+								<label for="hotel"><span>Accommodation</span>
+								<input type="text" name="hotel" id="hotel" value="6730 Luna Land North Rhiannonmouth">
+								<span class="form__arrow_drop"></span>
+								</label>
+								
+								<label for="checkIn"><span>Check-in</span>
+								<input type="text" name="checkIn" id="checkIn" value="19.06.2019">
+								</label>
+
+								<label for="checkOut"><span>Check-out</span>
+								<input type="text" name="checkOut" id="checkOut" value="19.06.2019">
+								</label>
+
+								<label for="guest"><span>Guests</span>
+								<input type="text" name="guest" id="guest" value="4 adults">
+								<span class="form__arrow_drop"></span>
+								</label>
+
+								<button type="submit">Search</button>
 							</form>
 					</fieldset>
 				</div>

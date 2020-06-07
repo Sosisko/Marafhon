@@ -18,12 +18,23 @@ body {
 
 .header {
 	padding-top: 40px;
-	padding-bottom: 30px;
 	padding-left: 20px;
-	border-bottom: 1px solid #E7E7F2;
+
 }
 
+.header a, .search, .aside__left_text a, .form button {
+	transition: all 0.5s ease-out;
 
+}
+
+.header a:hover, .search:hover, .aside__left_text a:hover, .form button:hover {
+	opacity: 0.5;
+}
+
+.header_content {
+	padding-bottom: 30px;
+	border-bottom: 1px solid #E7E7F2;
+}
 
 .header_left ul, .header_right ul{
 	display: -webkit-flex;
@@ -93,6 +104,7 @@ body {
 	line-height: 150%;
 	color: #FFF;
 	opacity: 0.8;
+	margin-right: 400px;
 }
 
 .aside {
@@ -180,37 +192,94 @@ body {
 	  
 }
 
-.form input {
+.form label {
+	position: relative;
 	min-height: 72px;
 	border: 1px solid #E7E7F2;
-	opacity: 0.3;
 	background: transparent;
-	font-size: 0;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
 }
 
-.form input:first-child {
+.form label span {
+	padding-top: 16px;
+	font-size: 15px;
+	line-height: 14px;
+	opacity: 0.3;
+}
+
+.form input {
+	border: none;
+	background: transparent;
+	width: 80%;
+	padding-top: 7px;
+	font-size: 16px;
+	line-height: 20px;
+	color: #fff;
+	letter-spacing:  0.09em;
+}
+
+.form label:first-child {
 	border-bottom-left-radius: 10px;
 	border-top-left-radius: 10px;
 	border-right: none;
-	flex: 0 0 34%;
+	flex: 0 0 33.2%;
+	background: url(../img/acc.png) no-repeat left center;
+	background-position: 18px;
+	padding-left: 59px;
 }
 
-.form input:nth-child(2) {
-	flex: 0 0 13%;
+
+
+.form label:nth-child(2) {
+	flex: 0 0 14%;
+	background: url(../img/checkin.png) no-repeat left center;
+	background-position: 18px;
+	padding-left: 59px;
+
 }
 
-.form input:nth-child(3) {
+.form label:nth-child(3) {
 	border-right: none;
 	border-left: none;
-	flex: 0 0 11%;
+	flex: 0 0 10.8%;
+	padding-left: 20px;
 }
 
-.form input:nth-child(4) {
+.form label:nth-child(4) {
 	border-bottom-right-radius: 10px;
 	border-top-right-radius: 10px;
-	margin-right: 40px;
+	margin-right: 32px;
 	flex: 0 0 19%;
-
+	background: url(../img/guest.png) no-repeat left center;
+	background-position: 18px;
+	padding-left: 59px;
 }
 
 
+.form__arrow_drop {
+	position: absolute;
+	right: 11px;
+	top: 50%;
+	width: 20px;
+	height: 20px;
+	background: url(../img/arrow_drop.png) no-repeat;
+	cursor: pointer;
+}
+
+.form button {
+	padding: 20px 90px;
+	background: #91CB82;
+	border-radius: 10px;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 18px;
+	letter-spacing:  0.09em;
+	cursor: pointer;
+	border: none;
+
+}
