@@ -25,11 +25,11 @@
 	.wrapper__text_content h1 {
 	   padding-top: 80px;
 	}
-	.aside {
+	.up-more {
 		top: 130px;
     	max-width: 450px;
 	}
-	.aside__left_text h2 {
+	.up-more__left_text h2 {
 		padding-bottom: 80px;
     	font-size: 20px;
 	}
@@ -59,18 +59,18 @@
 		margin-right: 0;
 	}
 	.form button {
-    	padding: 20px 10px;
-    	margin-left: 10px;
+		margin-top: 10px;
+    	flex: 0 0 100%;
 	}
 
 }
 
 @media (max-width: 900px) {
-	.aside {
-    	top: 210px;
+	.up-more {
+    	top: 245px;
     	max-width: 300px;
     }
-    .aside__left_text h2 {
+    .up-more__left_text h2 {
     	padding-top: 10px;
     	padding-bottom: 10px;
     }
@@ -78,15 +78,12 @@
     	padding-top: 35px;
     	padding-bottom: 95px;
     	text-align: center;
-    	font-size: 15px;
 	}
 	.wrapper__text_content p {
-    	font-size: 19px;
     	margin-right: 300px;
-    	font-size: 14px;
 	}
 
-	.aside__left_text {
+	.up-more__left_text {
 	    padding-left: 20px;
 	    padding-right: 20px;
 	}
@@ -104,9 +101,7 @@
 		font-size: 18px;
 		padding: 0 10px;
 		text-align: center;
-
 	}
-
 }
 
 
@@ -126,10 +121,27 @@
     	flex-wrap: wrap;
 
     }
+    .form label:nth-child(2),
+    .form label:nth-child(3) {
+    	flex: 0 0 50%;
+    	margin-bottom: 10px;
+    }
+    .form label:nth-child(3) {
+    	border-bottom-right-radius: 10px;
+	    border-top-right-radius: 10px;
+	    border-right: 1px solid #E7E7F2;
+    }
+    .form label:nth-child(4) {
+    	flex: 0 0 100%;
+    	border-bottom-left-radius: 10px;
+	    border-top-left-radius: 10px;
+	    border-left: 1px solid #E7E7F2;
+    }
+
 }
 
 @media (max-width: 500px) {
-	 .header_center {
+	.header_center {
     	order: -1;
     }
     .header_left {
@@ -163,23 +175,24 @@
 	.wrapper__text_content {
 		padding-bottom: 50px;
 	}
+
+	.form label:nth-child(2),
+    .form label:nth-child(3) {
+    	flex: 0 0 100%;
+    }
+	
+
 	.form label:nth-child(2) {
-		flex: 0 0 100%;
 		border-bottom-right-radius: 10px;
 	    border-top-right-radius: 10px;
 	    border-right: 1px solid #E7E7F2;
-	    margin-bottom: 10px;
 	}
 	.form label:nth-child(3) {
-		flex: 0 0 50%;
 		border-bottom-left-radius: 10px;
 	    border-top-left-radius: 10px;
 	    border-left: 1px solid #E7E7F2;
 	}
 
-	.form label:nth-child(4) {
-    	flex: 1 0 50%;
-    }
-
+	
 
 }

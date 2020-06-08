@@ -107,7 +107,7 @@ body {
 	margin-right: 400px;
 }
 
-.aside {
+.up-more {
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -117,22 +117,24 @@ body {
 	top: 313px;
 	right: 0;
 	max-width: 570px;
+}
+
+.up-more__left {
+	max-width: 300px;
 	background: rgba(255, 255, 255, 0.15);
 	backdrop-filter: blur(70px);
 	border-radius: 16px 0px 0px 16px;
+	overflow: hidden;
+
 }
 
-.aside__left {
-	max-width: 300px;
-}
-
-.aside__right {
+.up-more__right {
 	max-width: 270px;
 	font-size: 0;
 
 }
 
-.aside__left_text {
+.up-more__left_text {
 	padding-top: 48px;
 	padding-left: 36px;
 	padding-right: 50px;
@@ -140,7 +142,7 @@ body {
 }
 
 
-.aside__left_text p {
+.up-more__left_text p {
 	font-size: 20px;
 	line-height: 20px;
 	opacity: 0.5;
@@ -148,7 +150,7 @@ body {
 	letter-spacing: 0.01em;
 }
 
-.aside__left_text h2 {
+.up-more__left_text h2 {
 	padding-top: 40px;
 	padding-bottom: 85px;
 	font-size: 36px;
