@@ -163,4 +163,23 @@
 	.wrapper__text_content {
 		padding-bottom: 50px;
 	}
+	.form label:nth-child(2) {
+		flex: 0 0 100%;
+		border-bottom-right-radius: 10px;
+	    border-top-right-radius: 10px;
+	    border-right: 1px solid #E7E7F2;
+	    margin-bottom: 10px;
+	}
+	.form label:nth-child(3) {
+		flex: 0 0 50%;
+		border-bottom-left-radius: 10px;
+	    border-top-left-radius: 10px;
+	    border-left: 1px solid #E7E7F2;
+	}
+
+	.form label:nth-child(4) {
+    	flex: 1 0 50%;
+    }
+
+
 }
